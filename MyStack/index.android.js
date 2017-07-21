@@ -29,7 +29,7 @@ export default class MyStack extends Component {
   _keyExtractor = (item, index) => item.id;
 
   _pushAction(value){
-    his.setState({
+    this.setState({
       language: value
     })
   }
