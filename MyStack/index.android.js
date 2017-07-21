@@ -28,10 +28,10 @@ export default class MyStack extends Component {
 
   _keyExtractor = (item, index) => item.id;
 
-  _pushAction(value){
+  _pushAction(){
     this.setState({
-      language: value
-    })
+            arrayList:[...this.state.arrayList,this.state.text],
+        })
   }
 
   _popAction(){
